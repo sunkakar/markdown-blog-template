@@ -1,12 +1,19 @@
-# Test
+# Family and Friends 
+##### A Data Science Blog by Sundeep Kakar
 
-This is a **test** markdown file.
+## ToDo
+- [ ] Most commonly used words. 
+- [ ] Parametric Plot of cross-texts 
 
-<iframe src="https://codesandbox.io/embed/new?codemirror=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
-# Markdown Guide
+### Introduction 
 
-![The Ultimate Guide to Markdown](http://blog.ghost.org/content/images/2015/03/markdown-guide-1.jpg)
+During my 4 years at IUPUI, being an International student, I traveled numerous times to India. At least twice a year. My primary source of communication has been through Whatsapp with the closest people in my life. Using my Chat History with multiple people, in America or in India, I will visualize the messages in the last 4 years to show trends in communication based on my location during periods of time (while I was in India or in the US). 
+
+### Beginning 
+
+I had to start with writing Scripts. 
+
 
 ## Basic Markdown Formatting
 
@@ -130,69 +137,6 @@ Result:
 [1]: https://en.wikipedia.org/wiki/Fox "Wikipedia: Fox"
 [2]: https://en.wikipedia.org/wiki/Dog "Wikipedia: Dog"
 
-### Escaping
-
-    \*literally\*
-
-Result:
-
-\*literally\*
-
-### Embedding HTML
-
-    <button class="button-save large">Big Fat Button</button>
-
-Result:
-
-<button class="button-save large">Big Fat Button</button>
-
-## Advanced Markdown
-
-Note: Some syntax which is not standard to native Markdown. They're extensions of the language.
-
-### Strike-throughs
-
-    ~~deleted words~~
-
-Result:
-
-~~deleted words~~
-
-### Highlights
-
-Work in [Ghost](https://ghost.org/):
-
-    ==oooh fancy==
-
-Result:
-
-==oooh fancy==
-
-### Automatic Links
-
-    https://ghost.org
-
-Result:
-
-https://ghost.org
-
-### Markdown Footnotes
-
-Work in [Ghost](https://ghost.org/):
-
-    The quick brown fox[^1] jumped over the lazy dog[^2].
-
-    [^1]: Foxes are red
-    [^2]: Dogs are usually not red
-
-Result:
-
-The quick brown fox[^1] jumped over the lazy dog[^2].
-
-[^1]: Foxes are red
-[^2]: Dogs are usually not red
-
-## GitHub Flavored Markdown
 
 ### Syntax Highlighting
 
@@ -213,53 +157,6 @@ function fancyAlert(arg) {
   }
 }
 ```
-
-### Task Lists
-
-    - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-    - [x] list syntax required (any unordered or ordered list supported)
-    - [x] this is a complete item
-    - [ ] this is an incomplete item
-
-Result:
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-
-### Tables
-
-You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-### SHA references
-
-Any reference to a commit’s SHA-1 hash will be automatically converted into a link to that commit on GitHub.
-
-    16c999e8c71134401a78d4d46435517b2271d6ac
-    mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-    mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
-
-### Issue references within a repository
-
-Any number that refers to an Issue or Pull Request will be automatically converted into a link.
-
-    #1
-    mojombo#1
-    mojombo/github-flavored-markdown#1
-    
-### Username @mentions
-
-Typing an `@` symbol, followed by a username, will notify that person to come and view the comment. This is called an “@mention”, because you’re mentioning the individual. You can also @mention teams within an organization.
-
-### Emoji
-
-GitHub supports emoji! Check out the [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/).
 
 ## References
 
