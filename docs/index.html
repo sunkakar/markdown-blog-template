@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, viewport-fit=cover">
-        <title>Family and Friends</title>
+        <title>Family and Texting</title>
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
         <link href="assets/css/main.css" rel="stylesheet">
     </head>
     <body>
-        <h1 id="family-and-friends">Family and Friends</h1>
+        <h1 id="family-and-texting">Family and Texting</h1>
 <h5 id="a-data-science-blog-by-sundeep-kakar">A Data Science Blog by Sundeep Kakar</h5>
-<h3 id="introduction">Introduction</h3>
+<h2 id="introduction">Introduction</h2>
 <p><a href="https://gyazo.com/35076e41e6eaa667988337697960226d"><img src="https://i.gyazo.com/35076e41e6eaa667988337697960226d.jpg" alt="Image from Gyazo"></a></p>
 <p>As an International student, my primary form of communication with family and friends is through WhatsApp. During the last 4 years at IUPUI, I travelled back to New Delhi, India, every year during <strong>Summer Break</strong> and <strong>Winter Break</strong>. I chose to take this opportunity to learn more about my communication skills. By examining the Chat Data with my mom, I wanted to answer the following questions:</p>
 <ul>
@@ -22,89 +22,79 @@
 </ul>
 </li>
 </ul>
-<h3 id="beginning">Beginning</h3>
+<h2 id="beginning">Beginning</h2>
 <p>I collected the data by exporting my chat history from WhatsApp. According to <a href="https://www.express.co.uk/life-style/science-technology/1140438/whatsapp-export-chat-meaning-how-to-export-whatsapp-conversations-iphone-android">Express</a>, a maximum of 40,000 messages can be exported from a chat when choosing to export without media. Media accounts for larger chunks of the data and therefore doesn&#39;t allow enough space to go beyond about 10,000 messages in chat history. Using RegEx, the text was extracted and a functional dataset was built. This allowed for </p>
-<h3 id="subject-no-1-my-mom">Subject No. 1: My Mom</h3>
-<p>I chose to start with my mom. Talking to her is frequent over the phone/chat when I&#39;m not in the states. The data exported for the chat spanned from August 2017 to February 2020. This allowed for a uniform dataset which can be compared for patterns every year given that I travel back during summer and winter break. I felt I didn&#39;t use chat communication with her when I was home in India but I didn&#39;t know if that was true. </p>
+<h2 id="subject-no-1-my-mom">Subject No. 1: My Mom</h2>
+<p>I chose to start with my mom. If I&#39;m texting someone through WhatsApp, chances are it&#39;s my mother. I text her atleast 10 times a day. The data, however, did not agree with me...</p>
 <p><a href="https://gyazo.com/dc214053e903eff45b08993aea536626"><img src="https://i.gyazo.com/dc214053e903eff45b08993aea536626.png" alt="Image from Gyazo"></a></p>
+<p>I was surprised to find out that not only does my mother text me more often than I text her, she does it twice as much! </p>
+<p>A better indicator of chat patterns would be an overall view of the data regardless of the sender. I felt I still talk to her frequently over the phone/text when I&#39;m not in the states. The data exported spanned from August 2017 to February 2020. This allowed for a uniform dataset which can be compared for patterns every year given that I travel back during summer and winter break. When we visualize that data, we see the following:</p>
+<p><a href="https://gyazo.com/9330b0dbbaba1a45cdd2c7722defcec7"><img src="https://i.gyazo.com/9330b0dbbaba1a45cdd2c7722defcec7.png" alt="Image from Gyazo"></a></p>
+<p><a href="https://gyazo.com/e67b3d1f251a1aa50777e7d1af07cc4f"><img src="https://i.gyazo.com/e67b3d1f251a1aa50777e7d1af07cc4f.png" alt="Image from Gyazo"></a></p>
+<p><a href="https://gyazo.com/b3bb57154934eab056f2d7c1687b9225"><img src="https://i.gyazo.com/b3bb57154934eab056f2d7c1687b9225.png" alt="Image from Gyazo"></a></p>
+<p><a href="https://gyazo.com/dd9ff9c929fd943ea17ce84ebd3c11bb"><img src="https://i.gyazo.com/dd9ff9c929fd943ea17ce84ebd3c11bb.png" alt="Image from Gyazo"></a></p>
+<p>4 density graphs, one for each year, shows that there&#39;s a significant dip in frequency of texts sent starting May to August and December to January. This marks the duration of summer and winter breaks. 2019 shows no dip during Summer break as during this break, I started my first developer job and chose to stay in the States over travelling back home.   </p>
+<p>To understand this data better, we need to compare the month-wise text density with each year. </p>
 <p><a href="https://gyazo.com/e9fba84624f491e10ad8fb623d256413"><img src="https://i.gyazo.com/e9fba84624f491e10ad8fb623d256413.png" alt="Image from Gyazo"></a></p>
-<p>Clearly it can be observed that during break time I texted her the least. 
-Next, let&#39;s look at the trends of how often I text her. </p>
-<p>Result:</p>
-<p><em>This text will be italic</em></p>
-<p><em>This will also be italic</em></p>
-<p><strong>This text will be bold</strong></p>
-<p><strong>This will also be bold</strong></p>
-<p><em>You <strong>can</strong> combine them</em></p>
-<h3 id="lists">Lists</h3>
-<p><strong>Inordered:</strong></p>
-<pre><code>* Milk
-* Bread
-    * Wholegrain
-* Butter</code></pre><p>Result:</p>
+<p>This graph shows key information such as:</p>
 <ul>
-<li>Milk</li>
-<li>Bread<ul>
-<li>Wholegrain</li>
+<li>Upward trajectory in months following my return back to the IUPUI. </li>
+<li>Declining text counts in the months before Summer break </li>
+<li>Peak spikes during September which happens to be my birthday month. </li>
 </ul>
-</li>
-<li>Butter</li>
-</ul>
-<p><strong>Ordered:</strong></p>
-<pre><code>1. Tidy the kitchen  
-2. Prepare ingredients  
-3. Cook delicious things</code></pre><p>Result:</p>
-<ol>
-<li>Tidy the kitchen  </li>
-<li>Prepare ingredients  </li>
-<li>Cook delicious things</li>
-</ol>
-<h3 id="images">Images</h3>
-<pre><code>!<span class="hljs-selector-attr">[Alt Text]</span>(<span class="hljs-selector-tag">url</span>)</code></pre><p>Result:</p>
-<p><img src="http://i.imgur.com/v8IVDka.jpg" alt="m&#39;lady"></p>
-<h3 id="links">Links</h3>
-<pre><code>[link](http:<span class="hljs-comment">//example.com)</span></code></pre><p>Result:</p>
-<p><a href="http://example.com">link</a></p>
-<h3 id="blockquotes">Blockquotes</h3>
-<pre><code>As Kanye West said:
-
-&gt; We're living the future so
-&gt; the present is our past.</code></pre><p>Result:</p>
-<p>As Kanye West said:</p>
-<blockquote>
-<p>We&#39;re living the future so
-the present is our past.</p>
-</blockquote>
-<h3 id="horizontal-rules">Horizontal Rules</h3>
-<pre><code>---</code></pre><p>Result:</p>
+<p>(Interactive version for this graph can be found <a href="https://sunkakar.github.io/markdown-blog-template/Blog.html">here</a> )</p>
 <hr>
-<h3 id="code-snippets">Code Snippets</h3>
-<pre><code>Indenting by 4 spaces will turn an entire paragraph into a code-block.</code></pre><p>Result:</p>
-<pre><code><span class="hljs-selector-class">.my-link</span> {
-    <span class="hljs-attribute">text-decoration</span>: underline;
-}</code></pre><h3 id="reference-lists--titles">Reference Lists &amp; Titles</h3>
-<pre><code>**The quick brown [fox][<span class="hljs-number">1</span>], jumped over the lazy [dog][<span class="hljs-number">2</span>].**
-
-[<span class="hljs-number">1</span>]: https:<span class="hljs-comment">//en.wikipedia.org/wiki/Fox "Wikipedia: Fox"</span>
-[<span class="hljs-number">2</span>]: https:<span class="hljs-comment">//en.wikipedia.org/wiki/Dog "Wikipedia: Dog"</span></code></pre><p>Result:</p>
-<p><strong>The quick brown <a href="https://en.wikipedia.org/wiki/Fox" title="Wikipedia: Fox">fox</a>, jumped over the lazy <a href="https://en.wikipedia.org/wiki/Dog" title="Wikipedia: Dog">dog</a>.</strong></p>
-<h3 id="syntax-highlighting">Syntax Highlighting</h3>
-<pre><code><span class="hljs-string">``</span><span class="hljs-string">`javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-`</span><span class="hljs-string">``</span></code></pre><p>Result:</p>
-<pre><code class="javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fancyAlert</span>(<span class="hljs-params">arg</span>) </span>{
-  <span class="hljs-keyword">if</span>(arg) {
-    $.facebox({<span class="hljs-attr">div</span>:<span class="hljs-string">'#foo'</span>})
-  }
-}</code></pre>
+<p>After learning that I texted her half as much as she texts me, the next question is if there is a correlation in how we text. For that reason, we plotted a scatterplot and observe:</p>
+<p><a href="https://gyazo.com/1b6d7d6a76967bf331a6b6b011d77d2d"><img src="https://i.gyazo.com/1b6d7d6a76967bf331a6b6b011d77d2d.png" alt="Image from Gyazo"></a></p>
+<p>We plot the same and see a clear correlation between the two. In months that my mum texted me more, I also texted more. However, the range of the scales are twice in units of texts in a month.  </p>
+<hr>
+<h4 id="text-patterns">Text Patterns</h4>
+<p>I remember during freshman year, I would call my mother at least twice a week. That changed as I became busier and more involved on campus. Now, as I near graduation in a few months, the conversations have become limited to 3-4 words per text. </p>
+<p><em>The average count of words per text is <strong>3.960675</strong>.</em></p>
+<p>A quick inspection of the dataset tells us that most texts are the same. When we look up the most common texts   </p>
+<pre><code><span class="hljs-meta"># Most common Texts Sent  #</span>
+<span class="hljs-meta">##                Text Freq</span>
+<span class="hljs-meta">## 1   &lt;Media omitted&gt;  123</span>
+<span class="hljs-meta">## 2             Hanji   65</span>
+<span class="hljs-meta">## 3                👍🏼   29</span>
+<span class="hljs-meta">## 4                Ok   27</span>
+<span class="hljs-meta">## 5  Good morning Mom   18</span>
+<span class="hljs-meta">## 6               Mom   18</span>
+<span class="hljs-meta">## 7               Yep   18</span>
+<span class="hljs-meta">## 8              Okay   15</span>
+<span class="hljs-meta">## 9           Morning   10</span>
+<span class="hljs-meta">## 10            Okay.   10</span></code></pre><p>This seems typical to most of the conversations I have with my mom over WhatsApp. They involve either me sharing pictures I took of events and other things happening at work or around campus. Apart from that it includes a lot acknowledgements. <em>I think I need to re-evaluate my presumed prowess in my communication skills.</em> </p>
+<p>On taking a look at the most common texts received:</p>
+<pre><code><span class="hljs-meta">#Most common Texts Received#</span>
+<span class="hljs-meta">##                 Text Freq</span>
+<span class="hljs-meta">## 1  Missed video call  647</span>
+<span class="hljs-meta">## 2  Missed voice call  253</span>
+<span class="hljs-meta">## 3    &lt;Media omitted&gt;  225</span>
+<span class="hljs-meta">## 4                 Ok   93</span>
+<span class="hljs-meta">## 5  Good Morning beta   71</span>
+<span class="hljs-meta">## 6                👍    55</span>
+<span class="hljs-meta">## 7                😘    23</span>
+<span class="hljs-meta">## 8           R u busy   19</span>
+<span class="hljs-meta">## 9          Where r u   19</span>
+<span class="hljs-meta">## 10      R u in class   17</span></code></pre><p>This does makes me feel guilty as the top two messages are missed call with a wopping frequency of 900. That begs the question... :</p>
+<pre><code>Total Messages sent by mom = 2893 
+Total Messages pertaining to Missed Calls = 647 + 253 = 900
+900/2893 = 0.31109</code></pre><p><strong>31.11% of her total messages are Missed Calls!</strong></p>
+<p><a href=""><img src="https://media.giphy.com/media/XD4qHZpkyUFfq/giphy.gif" alt=""></a></p>
+<p>To better visualize my most common reponses to mother, I used a wordcloud. A wordcloud is a collection of words that are depicted in different sizes based upon their frequency. (<em>For context: Hanji is an acknowledgement in Hindi</em>)</p>
+<p><a href="https://gyazo.com/a39efd4b45ac8b8b9e8b2feaa0f0853c"><img src="https://i.gyazo.com/a39efd4b45ac8b8b9e8b2feaa0f0853c.png" alt="Image from Gyazo"></a>Interactive version for this graph can be found <a href="https://sunkakar.github.io/markdown-blog-template/Blog.html">here</a> )</p>
+<p>The wordcloud shows the top 50 responses that make up majority of my texts sent to my mother. This data maps almost 3 full years and therefore gives me no excuse to deny the patterns. The responses are almost all either greetings or acknowledgments.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>The data visualization allowed me to observe patterns that I wasn&#39;t aware of before such as my tendency to reply with 2-3 word long acknowledgments. While this makes texting easier, but it doesn&#39;t provide much substance to the conversation which in turn makes me a <strong>bad communicator</strong>. Contributing to only a 3rd of the conversation doesn&#39;t display <strong>equal input</strong> in the conversations. 
+After completing the data analysis the first thing I did was call my mum and tell her about my findings. She wasn&#39;t surprised by the numbers and was relieved that I noticed it. That being said, I don&#39;t plan on being monotonous over text anymore with my mother. My goal now is to match the her number of messages by month by making time and talking to her more often than before! 😀</p>
+<hr>
 <h2 id="references">References</h2>
 <ul>
-<li><a href="http://blog.ghost.org/markdown/">http://blog.ghost.org/markdown/</a></li>
-<li><a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></li>
+<li><a href="https://www.theodysseyonline.com/16-things-weve-all-done-and-instantly-regretted">Gif Used</a></li>
+<li><a href="https://raw.githubusercontent.com/luisDVA/codeluis/master/emojis.csv">Emoji reference</a></li>
+<li><a href="https://www.r-graph-gallery.com/">Graph Formatting</a></li>
+<li><a href="https://www.r-graph-gallery.com/196-the-wordcloud2-library.html">Worldcloud2</a></li>
 </ul>
 
     </body>
